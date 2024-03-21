@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Shopping Cart Checkout System (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements a simple checkout system for a shop that sells apples and oranges using React. It allows users to input items into the shopping cart and calculates the total cost based on the prices of the items. Additionally, it includes options to activate special offers such as "Buy one, get one free" on apples and "3 for the price of 2" on oranges.
 
-## Available Scripts
+## How to Use
 
-In the project directory, you can run:
+1; Clone this repository to your local machine.
 
-### `npm start`
+```bash
+git clone <repository-url>
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2; Navigate to the project directory.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+cd shoppingcart
+```
 
-### `npm test`
+3; Install dependencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+4; Run the application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5; Open your web browser and go to [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6; Enter the quantity of apples and oranges in the input fields.
 
-### `npm run eject`
+7; Click the "Add" button to add the item to the shopping cart.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+8; Repeat steps 6 and 7 for each item you want to add.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+9; Click the "Calculate Total" button to see the total cost including any applicable offers.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## High-Level Explanation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project consists of a single-page application built with React. It includes components for the input form, shopping cart display, and total cost calculation. Users can input items (apples or oranges) into the shopping cart, and the total cost is dynamically updated based on the quantity of each item and any applicable special offers.
 
-## Learn More
+## Reasoning Behind Technical Choices
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React**: Chosen for its simplicity in managing state and rendering UI components efficiently.
+- **React Hooks**: Used to manage component-level state without the need for class components.
+- **CSS**: Basic styling is applied using CSS for a clean and user-friendly interface.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Trade-offs
 
-### Code Splitting
+- **Simplicity over Complexity**: The implementation prioritizes simplicity to focus on core functionality. More advanced features such as user authentication, persistent cart storage, or dynamic item pricing could be added with additional development time.
+- **UI Styling**: While the UI is styled to be visually appealing, it could benefit from more advanced styling and design elements for a polished look. However, this was kept minimal to focus on functionality.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Potential Improvements
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Error Handling**: Implement more robust error handling for invalid inputs or edge cases.
+- **Testing**: Add unit tests to ensure the correctness of the calculation logic and improve code maintainability.
+- **Localization**: Support multiple languages and currencies for a broader audience.
+- **Responsive Design**: Enhance the UI to be more responsive and optimized for various screen sizes.
