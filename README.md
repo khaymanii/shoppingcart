@@ -7,7 +7,7 @@ This project implements a simple checkout system for a shop that sells apples an
 1; Clone this repository to your local machine.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/khaymanii/shoppingcart.git
 ```
 
 2; Navigate to the project directory.
